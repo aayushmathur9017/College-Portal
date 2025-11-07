@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ABC College - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">🎓</div>
+        <div>
+          <h1 class="brand-title">ABES Engineering College</h1>
+          <p class="tagline">Excellence • Innovation • Growth</p>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="departments.html" class="nav-link active">Departments</a>
+        <a href="events.html" class->Events</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h2>Empowering Students for a Brighter Future</h2>
+        <p class="lead">Join <strong>ABC College</strong> — where practical learning meets academic excellence. Scholarships, internships, and global exchange programs available.</p>
+
+        <div class="hero-cta">
+          <button id="applyBtn" class="btn btn-primary">Apply Now</button>
+          <a href="courses.html" class="btn btn-outline">Explore Courses</a>
+        </div>
+
+        <ul class="hero-stats">
+          <li><strong>95%</strong><span>Placement Rate</span></li>
+          <li><strong>150+</strong><span>Industry Partners</span></li>
+          <li><strong>30+</strong><span>Active Clubs</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="card card-illustration">
+          <img src="college.jpg" alt="Modern college campus building" />
+          <figcaption>Modern campus</figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ---
+  
+  <section class="section container features">
+    
+    <div class="feature">
+      <img src="lab.jpg" alt="Fully equipped modern computer and data science lab" class="feature-img" /> 
+      <div class="feature-content">
+        <h3>Modern Labs</h3>
+        <p>Fully-equipped labs for Computer Science, Electronics and Data Science.</p>
+      </div>
+    </div>
+    
+    <div class="feature">
+      <img src="faculty.jpg" alt="Experienced professor teaching students in a bright classroom" class="feature-img" />
+      <div class="feature-content">
+        <h3>Expert Faculty</h3>
+        <p>Experienced professors with industry background and research experience.</p>
+      </div>
+    </div>
+    
+    <div class="feature">
+      <img src="placement.jpg" alt="Students interacting with top recruiters at a placement drive" class="feature-img" />
+      <div class="feature-content">
+        <h3>Placements & Internships</h3>
+        <p>Dedicated placement cell with training and top recruiters visiting each year.</p>
+      </div>
+    </div>
+    
+  </section>
+
+  ---
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>ABC College</h4>
+        <p>© 2025 ABC College • All Rights Reserved</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@abccollege.edu<br/>Phone: +91-9876543210</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="courses.html">Courses</a> • <a href="events.html">Events</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <div id="admissionModal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="admissionTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close modal">✕</button>
+
+      <div class="modal-split">
+        <div class="modal-left">
+          <h2 id="admissionTitle">Admission Form — 2025</h2>
+          <p class="muted">Fill the form below to begin your application. Our admissions team will reach out within 2 business days.</p>
+
+          <ul class="modal-bullets">
+            <li><strong>Documents:</strong> 10th/12th marksheet, photo ID, passport photo</li>
+            <li><strong>Fee:</strong> Application fee ₹500 (online)</li>
+            <li><strong>Scholarships:</strong> Merit and need-based available</li>
+          </ul>
+        </div>
+
+        <div class="modal-right">
+          <form id="admissionForm" class="form">
+            <div class="form-row">
+              <label for="fullname">Full Name</label>
+              <input id="fullname" name="fullname" type="text" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-row">
+              <label for="course">Choose Course</label>
+              <select id="course" name="course" required>
+                <option value="">-- Select --</option>
+                <option>BCA</option>
+                <option>MBA</option>
+                <option>B.tech</option>
+                <option>M.tech</option>
+                <option>MCA</option>
+                <option>M.sc</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Mobile Number</label>
+              <input id="phone" name="phone" type="tel" pattern="[0-9]{10}" placeholder="10 digit mobile" required />
+            </div>
+
+            <div class="form-row">
+              <label for="note">Short Statement</label>
+              <textarea id="note" name="note" rows="3" maxlength="600" placeholder="Why do you want to join ABES E College?" required></textarea>
+            </div>
+
+            <div class="form-row form-actions">
+              <button type="submit" class="btn btn-primary full">Submit Application</button>
+            </div>
+
+            <div class="form-note">By submitting you agree to our <a href="about.html">terms & policies</a>.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

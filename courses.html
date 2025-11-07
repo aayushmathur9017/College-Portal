@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses — ABES Engineering College</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="logo">🎓</div>
+      <div>
+        <h1 class="brand-title">ABES Engineering College</h1>
+        <p class="tagline">Excellence • Innovation • Growth</p>
+      </div>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="courses.html" class="nav-link">Courses</a>
+      <a href="departments.html" class="nav-link active">Departments</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="container section content">
+    <h2>Our Courses</h2>
+    <p class="lead">ABES Engineering College offers industry-driven programs designed to build future-ready professionals with strong academic and practical foundations.</p>
+
+    <div class="card-grid">
+      <!-- BCA -->
+      <article class="card">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p><strong>Duration:</strong> 3 years | <strong>Eligibility:</strong> 10+2 (Any stream)</p>
+        <p><strong>About:</strong> Focuses on software development, web technologies, and programming languages to prepare students for IT careers.</p>
+        <ul>
+          <li>Programming in C, C++, Java, Python</li>
+          <li>Database & Web Application Development</li>
+          <li>Mini Projects & Industry Internship</li>
+        </ul>
+        <p class="card-cta"><button class="btn btn-primary apply-now-inline">Apply Now</button></p>
+      </article>
+
+      <!-- B.Tech -->
+      <article class="card">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p><strong>Duration:</strong> 4 years | <strong>Eligibility:</strong> 10+2 (PCM)</p>
+        <p><strong>About:</strong> Offers specializations in CSE, ECE, Mechanical, Civil & IT. Focused on innovation and real-world problem solving.</p>
+        <ul>
+          <li>Data Structures, IoT & Cloud Computing</li>
+          <li>Engineering Design, AI & Machine Learning</li>
+          <li>Major Project in Final Year</li>
+        </ul>
+        <p class="card-cta"><button class="btn btn-primary apply-now-inline">Apply Now</button></p>
+      </article>
+
+      <!-- M.Tech -->
+      <article class="card">
+        <h3>Master of Technology (M.Tech)</h3>
+        <p><strong>Duration:</strong> 2 years | <strong>Eligibility:</strong> B.Tech / BE</p>
+        <p><strong>About:</strong> Advanced research-oriented program emphasizing emerging technologies and innovation.</p>
+        <ul>
+          <li>AI, Robotics & Machine Learning</li>
+          <li>Research Thesis & Publications</li>
+          <li>Project Collaboration with Industry</li>
+        </ul>
+        <p class="card-cta"><button class="btn btn-primary apply-now-inline">Apply Now</button></p>
+      </article>
+
+      <!-- MCA -->
+      <article class="card">
+        <h3>Master of Computer Applications (MCA)</h3>
+        <p><strong>Duration:</strong> 2 years | <strong>Eligibility:</strong> BCA / B.Sc (IT)</p>
+        <p><strong>About:</strong> Focuses on software architecture, data science, and project-based learning for tech leadership roles.</p>
+        <ul>
+          <li>Full Stack Development</li>
+          <li>AI, Data Analytics, DevOps</li>
+          <li>Capstone Industry Project</li>
+        </ul>
+        <p class="card-cta"><button class="btn btn-primary apply-now-inline">Apply Now</button></p>
+      </article>
+
+      <!-- MBA -->
+      <article class="card">
+        <h3>Master of Business Administration (MBA)</h3>
+        <p><strong>Duration:</strong> 2 years | <strong>Eligibility:</strong> Bachelor's degree (Any stream)</p>
+        <p><strong>About:</strong> Builds leadership and management skills with a focus on marketing, finance, and HR analytics.</p>
+        <ul>
+          <li>Marketing, Finance & HR Specializations</li>
+          <li>Live Case Studies & Internships</li>
+          <li>Corporate Guest Lectures</li>
+        </ul>
+        <p class="card-cta"><button class="btn btn-primary apply-now-inline">Apply Now</button></p>
+      </article>
+
+      <!-- M.Sc -->
+      <article class="card">
+        <h3>Master of Science (M.Sc)</h3>
+        <p><strong>Duration:</strong> 2 years | <strong>Eligibility:</strong> B.Sc or equivalent</p>
+        <p><strong>About:</strong> Advanced science program offering Physics, Chemistry, Mathematics, and Biology specializations.</p>
+        <ul>
+          <li>Research-Based Projects</li>
+          <li>Laboratory & Industrial Training</li>
+          <li>Global Research Opportunities</li>
+        </ul>
+        <p class="card-cta"><button class="btn btn-primary apply-now-inline">Apply Now</button></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>ABES Engineering College</h4>
+        <p>© 2025 ABES Engineering College. All rights reserved.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@abescollege.edu<br />Phone: +91 98765 43210</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="admissionModal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="admissionTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close modal">✕</button>
+      <div class="modal-split">
+        <div class="modal-left">
+          <h2 id="admissionTitle">Admission Form — 2025</h2>
+          <p class="muted">Fill out the details below. Our counselor will reach out to you shortly.</p>
+        </div>
+        <div class="modal-right">
+          <form id="admissionForm" class="form">
+            <div class="form-row"><label for="fullname">Full Name</label><input id="fullname" name="fullname" type="text" required /></div>
+            <div class="form-row"><label for="email">Email</label><input id="email" name="email" type="email" required /></div>
+            <div class="form-row"><label for="course">Choose Course</label>
+              <select id="course" name="course" required>
+                <option value="">-- Select --</option>
+                <option>BCA</option>
+                <option>B.Tech</option>
+                <option>M.Tech</option>
+                <option>MBA</option>
+                <option>MCA</option>
+                <option>M.Sc</option>
+              </select>
+            </div>
+            <div class="form-row"><label for="phone">Mobile Number</label><input id="phone" name="phone" type="tel" pattern="[0-9]{10}" required /></div>
+            <div class="form-row form-actions"><button type="submit" class="btn btn-primary full">Submit Application</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
