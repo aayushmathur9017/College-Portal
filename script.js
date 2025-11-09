@@ -163,8 +163,13 @@ function getBotResponse(inputText) {
   let response = "";
 
   if (text.includes("mid term") || text.includes("exam")) {
-    response = "Mid Term 2 exams are expected around November–December. Please check the ABES ERP or notice board for official dates.";
-  } 
+    response = `🕒 <strong>Exam Timings at ABES Engineering College:</strong><br><br>
+  • <strong>Mid-Term Exams:</strong> Usually held from <strong>11:00 AM to 12:15 PM</strong> (morning session).<br>
+  • <strong>End-Term Exams:</strong> Generally conducted from <strong>09:30 AM to 12:30 PM</strong>.<br>
+  • Reporting time for all exams is <strong>30 minutes before</strong> the start.<br><br>
+  📍 Please always confirm via the official notice or your department portal:<br>
+  <a href="https://abes.ac.in/" target="_blank">https://abes.ac.in/exam.html</a>`;
+}
   else if (
   text.includes("datesheet") &&
   text.includes("mca") &&
@@ -177,8 +182,7 @@ function getBotResponse(inputText) {
   <strong>20 Nov</strong> – Operating System<br>
   <strong>21 Nov</strong> – Essentials of Mathematics<br>
   <strong>22 Nov</strong> – Web Designing<br><br>
-  <strong>16 Dec</strong> – Software Project Management<br><br>
-  For any updates, please check the official <a href="https://abes.ac.in/exam.html" target="_blank">ABES Exam Portal</a>.`;
+  For any updates, please check the official <a href="https://abes.ac.in/" target="_blank">ABES Exam Portal</a>.`;
 }
   else if (text.includes("fee") || text.includes("fees structure")) {
     if (text.includes("btech")) response = "B.Tech Fee Structure: ₹1,35,000 per year (approx). Source: https://abes.ac.in/fees.html";
@@ -215,6 +219,7 @@ function getBotResponse(inputText) {
   • M.Tech (Computer Science / Electronics / Mechanical)<br><br>
   For complete details, visit the official <a href="https://abes.ac.in/programs.html" target="_blank">Courses Page</a>.`;
 }
+
   else {
     response = "I’m not sure about that 🤔. You can check more details at the official website: https://abes.ac.in";
   }
